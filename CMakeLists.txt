@@ -24,7 +24,7 @@ set(GMOCK_BOTH_LIBRARIES /usr/local/lib/libgmock.a /usr/local/lib/libgmock_main.
 
 set(CMAKE_BUILD_TYPE Release)
 
-add_executable(sequencePlatform sequencePlatform.cpp)
+add_executable(sequencePlatform.exe sequencePlatform.cpp)
 
 #add_executable(problem2 problem2.cpp)
 #add_executable(problem3 problem3.cpp)
