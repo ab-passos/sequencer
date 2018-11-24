@@ -6,8 +6,6 @@
 #include "PlugInTis.hpp"
 #include "boost/uuid/uuid_io.hpp"
 
-
-
 int main() {
   std::cout << "Starting Client!" << std::endl;
   SequenceFactoryImpl factory;
@@ -15,7 +13,7 @@ int main() {
   std::string plugInName = "Test";
 
   ActionsPtr actionPtr = ActionsPtr(new ActionsImpl());
-  std::unique_ptr<PlugIn> plugIn = std::unique_ptr<PlugIn>(
+  PlugInPtr plugIn = PlugInPtr(
     new PlugInTis(plugInName, actionPtr));
 
   auto instanceId = sequence->registerInstance(plugInName, plugIn);
